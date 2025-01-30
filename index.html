@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Javascript-->
+    <script src="app.js" defer></script>
+    <!--Import Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="main-bar">
+                <div class="left-section">
+
+                </div>
+
+                <div class="middle-section">
+
+                    <div class="links-wrapper">
+
+                        <li class="nav-elements hide-on-mobile">
+                            <a href="index.html">Home</a>
+                        </li>
+                        
+
+                        
+                        <li class="nav-elements hide-on-mobile">
+                            <a href="#create-card-element">Create Card</a>
+                        </li>
+                        
+
+                        
+                        <li class="nav-elements hide-on-mobile" onclick="deleteAllCards()">Delete all cards</li>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="right-section">
+                    <div class="menu-btn" onclick="enableSideBar()">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="side-bar">
+
+                <div class="cancel-sidebar-btn" onclick="hideSideBar()">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <div class="links-wrapper ">
+
+                    <li class="nav-elements">
+                        <a href="index.html">Home</a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-elements">
+                        <a href="#create-card-element">Create Card</a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-elements" onclick="deleteAllCards()">Delete all cards</li>
+                    
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="card-container">
+
+        <div class="note-card" id="create-card-element">
+            <div class="card-wrapper">
+                <div class="heading">
+                    <div class="heading-wrapper">
+                        <h1>Add Cards</h1>
+                    </div>
+
+                    <div class="add-heading-placeholder">
+                        <input type="text">
+                    </div>
+                    
+                </div>
+
+                <div class="content">
+
+                    <div class="create-new-card-container"><!--is disabled-->
+                        <i class='bx bx-plus-circle'></i>
+                    </div>
+
+                    <div class="add-content-placeholder">
+                        <textarea></textarea>
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+            <div class="approve-card-btn">
+                <i class='bx bx-check'></i>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>
