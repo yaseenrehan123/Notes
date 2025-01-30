@@ -73,7 +73,13 @@ function removeCard(card){ // doesnt work!
 }
 function addNewCard(){ // is attached on approveButton
     if(headingInputElement.value === '' || contentInputElement.value === ''){
-        alert('Cant create empty card, please write something !');
+        headingInputElement.value = '';
+        contentInputElement.value = '';
+        createCardButton.style.display = 'flex';
+        defCardHeading.style.display = 'flex';
+        addHeadingPlaceholder.style.display = 'none';
+        addContentPlaceholder.style.display = 'none';
+        approveCardBtn.style.display = 'none';
         return;
     }
     const newCard = new noteCard(headingInputElement.value,contentInputElement.value);
